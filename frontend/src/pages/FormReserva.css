@@ -1,0 +1,57 @@
+.form-reserva-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.form-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.reserva-form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.form-field {
+    width: 100%;
+}
+
+.disponibilidade-btn {
+    margin-right: 10px;
+}
+
+.disponibilidade-status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.disponibilidade-status.disponivel {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.disponibilidade-status.indisponivel {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+@media (min-width: 600px) {
+    .reserva-form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-field:nth-last-child(2),
+    .form-field:last-child {
+        grid-column: span 2;
+    }
+}
